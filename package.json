@@ -1,30 +1,27 @@
 {
-  "name": "polly-text-split",
-  "version": "0.1.0",
-  "description": "Text splitter for working with AWS Polly TTS.",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "test": "tap test/*.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oleglegun/polly-text-split.git"
-  },
-  "keywords": [
-    "polly",
-    "aws",
-    "tts"
-  ],
-  "author": "Oleg Legun <oleg.legun@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/oleglegun/polly-text-split/issues"
-  },
-  "homepage": "https://github.com/oleglegun/polly-text-split#readme",
-  "devDependencies": {
-    "tap": "^11.1.3"
-  }
+    "name": "polly-text-split",
+    "version": "0.1.0",
+    "description": "Text splitter for working with AWS Polly TTS.",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "tap test/*.js",
+        "cover": "tap test/*.js --coverage"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oleglegun/polly-text-split.git"
+    },
+    "keywords": ["polly", "aws", "tts"],
+    "author": "Oleg Legun <oleg.legun@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/oleglegun/polly-text-split/issues"
+    },
+    "homepage": "https://github.com/oleglegun/polly-text-split#readme",
+    "devDependencies": {
+        "tap": "^11.1.3"
+    }
 }
