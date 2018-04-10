@@ -82,6 +82,9 @@ MIT.
 
 ## Changelog
 
+### [0.1.1] - 2018-04-10
+- Add Readme.
+
 ### [0.1.0] - 2018-04-10
 - Initial release.
 
