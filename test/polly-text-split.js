@@ -45,17 +45,17 @@ const testCasesText = [
         result: ['Simple text,', ' simple text.'],
     },
     {
-        options: defaultOptions,        
+        options: defaultOptions,
         text: 'Simple text; simple text.',
         result: ['Simple text;', ' simple text.'],
     },
     {
-        options: defaultOptions,        
+        options: defaultOptions,
         text: 'Simple text simple text.',
-        result: ['Simple text', 'simple text.'],
+        result: ['Simple text ', 'simple text.'],
     },
     {
-        options: defaultOptions,        
+        options: defaultOptions,
         text: 'Simple textsimple text.',
         result: ['Simple text', 'simple text.'],
     },
@@ -75,11 +75,5 @@ testCasesText.forEach(test => {
         textSplit.configure(test.options)
     }
 
-    t.same(textSplit.splitText(test.text), test.result)
+    t.same(textSplit.split(test.text), test.result)
 })
-
-/*-----------------------------------------------------------------------------
- *  Tests for splitting text with SSML tags
- *----------------------------------------------------------------------------*/
-
-const testCasesSSML = [{}]
