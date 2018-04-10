@@ -1,6 +1,6 @@
 {
     "name": "polly-text-split",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Text splitter for working with AWS Polly TTS.",
     "main": "index.js",
     "directories": {

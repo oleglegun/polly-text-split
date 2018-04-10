@@ -36,7 +36,7 @@ const batches = pollyTextSplit.split('your long text here')
 
 
 // 2. Method splitIndex() returns index of the possible split position.
-const splitIndex = pollyRuSSML.splitIndex('your long text here')
+const splitIndex = pollyTextSplit.splitIndex('your long text here')
 // So you can split manually using native string method
 const batch = 'your long text here'.slice(0, splitIndex + 1)
 ```
