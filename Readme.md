@@ -79,6 +79,10 @@ MIT.
 
 ## Changelog
 
+### [0.1.3] - 2018-04-13
+
+*   Update JSDoc annotations.
+
 ### [0.1.2] - 2018-04-13
 
 *   Code refactor and optimizations.
