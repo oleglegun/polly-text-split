@@ -1,6 +1,6 @@
 {
     "name": "polly-text-split",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "Text splitter for working with AWS Polly TTS.",
     "main": "index.js",
     "directories": {
@@ -14,7 +14,7 @@
         "type": "git",
         "url": "git+https://github.com/oleglegun/polly-text-split.git"
     },
-    "keywords": ["polly", "aws", "tts"],
+    "keywords": ["polly", "aws", "tts", "alexa", "text split", "amazon"],
     "author": "Oleg Legun <oleg.legun@gmail.com>",
     "license": "MIT",
     "bugs": {

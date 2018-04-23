@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/oleglegun/polly-text-split.svg?branch=master)](https://travis-ci.org/oleglegun/polly-text-split)
 [![Coverage Status](https://coveralls.io/repos/github/oleglegun/polly-text-split/badge.svg?branch=master)](https://coveralls.io/github/oleglegun/polly-text-split?branch=master)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## Synopsis
 
@@ -18,7 +18,7 @@ Also, given that the AWS Polly is a context aware text-to-speech system, it adju
 1.  at the nearest dot `.`
 2.  if (1) not found - split by `,` or `;` (by default, can be configured)
 3.  if (2) not found - split by space ``
-4.  if (3) not found - hard split at `HARD_LIMIT` index
+4.  if (3) not found - hard split at the `HARD_LIMIT` index
 
 ## Installation
 
@@ -31,7 +31,7 @@ Also, given that the AWS Polly is a context aware text-to-speech system, it adju
 ```js
 const pollyTextSplit = require('polly-text-split')
 
-// 1. Method split() return array of strings.
+// 1. Method split() returns array of strings.
 const batches = pollyTextSplit.split('your long text here')
 
 // 2. Method splitIndex() returns index of the possible split position.
@@ -42,7 +42,7 @@ const batch = 'your long text here'.slice(0, splitIndex + 1)
 
 ### Configuration
 
-By default, configuration is not necessary, but if you need to set your own limits or split characters - use method `configure()`.
+By default, configuration is not necessary, but if you need to set your own limits or split characters, you can use method `configure()` for that.
 
 ```js
 const pollyTextSplit = require('polly-text-split')
@@ -57,6 +57,7 @@ const options = {
     extraSplitChars: ',;',
 }
 
+// Apply configuration
 pollyTextSplit.configure(options)
 
 // Use with new configuration
@@ -79,18 +80,17 @@ MIT.
 
 ## Changelog
 
-### [0.1.3] - 2018-04-13
+### [0.1.4] - 2018-04-23
+- Hide private properties from user API.
 
-*   Update JSDoc annotations.
+### [0.1.3] - 2018-04-13
+- Update JSDoc annotations.
 
 ### [0.1.2] - 2018-04-13
-
-*   Code refactor and optimizations.
+- Code refactor and optimizations.
 
 ### [0.1.1] - 2018-04-10
-
-*   Add Readme.
+- Add Readme.
 
 ### [0.1.0] - 2018-04-10
-
-*   Initial release.
+- Initial release.
